@@ -8,9 +8,9 @@ import { Pipe, PipeTransform } from '@angular/core';
  * Результат: 4 года, 1 год, 7 лет
  */
 @Pipe({
-    name: 'ngNumEnding'
+    name: 'appEnding'
 })
-export class NgNumEndingPipe implements PipeTransform {
+export class EndingPipe implements PipeTransform {
     public transform(digit: number = 0, endings: string[]): string {
         if (digit === null || isNaN(digit)) {
 
